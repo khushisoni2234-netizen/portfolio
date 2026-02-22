@@ -1,0 +1,167 @@
+:root{
+  --primary:#065A82;
+  --accent:#27C7D7;
+  --bg:#F0F7FA;
+  --text:#1E2D3D;
+  --white:#ffffff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+
+header{
+  position:sticky;
+  top:0;
+  background:var(--primary);
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 2rem;
+}
+
+nav{
+  display:flex;
+  gap:2rem;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  transition:.3s;
+}
+
+nav a:hover{
+  color:var(--accent);
+}
+
+
+#hero{
+  text-align:center;
+  padding:6rem 2rem;
+  color:white;
+  background:linear-gradient(135deg,#065A82,#27C7D7);
+}
+
+.subtitle{
+  margin-top:10px;
+  opacity:0.9;
+}
+
+.profile-photo{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  margin-top:1rem;
+}
+
+
+section{
+  padding:4rem 2rem;
+  max-width:1100px;
+  margin:auto;
+}
+
+section h2{
+  border-bottom:3px solid var(--accent);
+  display:inline-block;
+  margin-bottom:2rem;
+  color:var(--primary);
+}
+
+
+.skills-list{
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.skills-list li{
+  background:var(--primary);
+  color:white;
+  padding:8px 14px;
+  border-radius:20px;
+  transition:.3s;
+}
+
+.skills-list li:hover{
+  background:var(--accent);
+}
+
+
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;
+}
+
+.card{
+  background:white;
+  padding:1.5rem;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+
+
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+  max-width:600px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+button{
+  padding:10px;
+  border:none;
+  background:var(--primary);
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+button:hover{
+  background:var(--accent);
+}
+
+
+footer{
+  text-align:center;
+  padding:2rem;
+  background:var(--primary);
+  color:white;
+}
+
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0D1B2A;
+    --text:#E8F4F8;
+    --white:#1A2E45;
+  }
+}
