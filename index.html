@@ -3,18 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio</title>
+<title>Khushi | Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="responsive.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-  <h2 class="logo">my website</h2>
+  <span class="logo">Khushi</span>
   <nav>
     <a href="#hero">Home</a>
     <a href="#about">About</a>
@@ -24,57 +23,82 @@
   </nav>
 </header>
 
+<main>
+
 <!-- HERO -->
 <section id="hero">
-  <h1>Hello, I'm khushi</h1>
-  <p class="subtitle">Web Developer • UI Designer • Tech Learner</p>
-  <img src="https://picsum.photos/200" class="profile-photo">
+  <h1>Hello, I'm Khushi</h1>
+  <p class="subtitle">Aspiring Web Developer | Python Enthusiast</p>
+  <img src="myphoto.jpg" alt="Khushi profile photo" class="profile-photo">
 </section>
 
+<!-- ABOUT -->
 <section id="about">
   <h2>About Me</h2>
   <p>
-    i enjoy learning new things.
-    i am interested in ai/ml.
+    I am a passionate learner who enjoys building websites and exploring new technologies.
+    I am especially interested in Python and AI/ML.
+  </p>
+  <p>
+    I love solving problems and improving my skills through real projects and teamwork.
   </p>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
-  <h2>Skills</h2>
+  <h2>My Skills</h2>
   <ul class="skills-list">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>python</li>
-    <li>sql</li>
+    <li>HTML & CSS</li>
+    <li>Python</li>
+    <li>Flask</li>
+    <li>SQL</li>
     <li>Git & GitHub</li>
   </ul>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
   <h2>Projects</h2>
 
   <div class="projects-grid">
-    <div class="card">
-      <h3>travel Website</h3>
-      <p>travel website done the backend using python,sql</p>
-    </div>
 
+    
+<article class="card">
+  <h3>Handwritten Digit Prediction</h3>
+  <p>
+    Developed a machine learning model to recognize handwritten digits (0–9)
+    using the MNIST dataset. Explored and visualized image data, trained the model
+    in Google Colab, and used NumPy for numerical processing.
+  </p>
+</article>
+
+    <article class="card">
+      <h3>Travel Website</h3>
+      <p>
+         Developed the backend using Flask. Built APIs, handled database operations,
+        and ensured smooth server-side functionality.
+      </p>
+    </article>
+
+  </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
-  <h2>Contact</h2>
+  <h2>Contact Me</h2>
 
   <form class="contact-form">
     <input type="text" placeholder="Your Name" required>
     <input type="email" placeholder="Your Email" required>
-    <textarea rows="4" placeholder="Message"></textarea>
+    <textarea rows="4" placeholder="Your Message"></textarea>
     <button type="submit">Send Message</button>
   </form>
-
 </section>
 
+</main>
+
 <footer>
-  <p>© 2026 Hitali | All Rights Reserved</p>
+  <p>© 2026 Khushi | Portfolio</p>
 </footer>
 
 </body>
